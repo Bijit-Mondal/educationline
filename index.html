@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://www.extremetech.com/wp-content/uploads/2017/03/robot-ai-2-640x353.jpg" type="image/x-icon">
+	<title>E-education Online Teaching Platform</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>
+	<nav class="nav_bar background">
+		<div class="logo"><img src="https://www.extremetech.com/wp-content/uploads/2017/03/robot-ai-2-640x353.jpg" draggable="false"></div>
+		<p><a href="#home">Home</a></p>
+		<p><a href="#About">About</a></p>
+		<p><a href="#Contact">Contact</a></p>
+		<div class="right_nav">
+			<input type="text" list="sh" name="search" id="search">
+			<datalist id="sh">
+				<option value="Sequential Logic Circuit Pdf">
+				<option value="Sequential Logic Circuit Audio">
+				<option value="Introduction To DBMS Pdf">
+				<option value="Introduction To DBMS Audio">
+				<option value="Data Structure Pdf">
+				<option value="Data Structure Audio">
+				<option value="Rudiments Of Computer Science Class 12">
+			</datalist>
+			<button class="btn" id="clicker">Search</button>
+		</div>
+	</nav>
+	<section class="first">
+		<h1>E-educationline Teaching Platform
+		<span id="sub"> - Ads Free Education</span></h1>
+	</section>
+	<div class="sec">
+	<section class="second">
+			<p>E-educationline Is A Free Platform For Both Teacher
+				And Student For Teaching And Learning Respectively. If You Love This You Can <a id="donate" href="" target="_blank">Donate Us.</a>
+				</p>
+	</section>
+	<section class="third">
+		
+	</section>
+	
+</div>
+</center>
+<script>
+	var clickerButton=document.getElementById("clicker");
+	var onButtonClick = function(){
+		clickerButton.textContent="Oops! I Am Not Enable Now But I Will Be Soon";
+	};
+	clickerButton.addEventListener("click",onButtonClick);
+	var donate = document.getElementById("donate");
+	var OnHover = function(e){
+		e.preventDefault();
+		donate.textContent="Pay At Amazon Pay On 6291171004 Mobile Number";
+	};
+	donate.addEventListener("click",OnHover);
+</script>
+</body>
+</html>
