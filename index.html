@@ -122,18 +122,77 @@
 #donate:active{
 	color:#6BFF8E;
 }
+.burger{
+	position: absolute;
+	cursor: pointer;
+	right: 5%;
+	top: 15px;
+	display: none;
+}
+.line{
+	width: 33px;
+	background-image: linear-gradient(#10003F,#288C3F,#8C282F);
+	height: 4px;
+	margin: 5px 3px;
+}
+@media screen and (max-width: 1000px){
+	.nav_bar{
+		flex-direction: column;
+	}
+	.nav_bar p a{
+		font-size: 59px;
+		transition-duration: 2s;
+		transition-timing-function: ease-out;
+	}
+	.nav_bar p a:hover{
+		font-size: 59px;
+	}
+	.burger{
+		display: block;
+		opacity:10;
+	}
+	#search{
+    border: darkblue;
+    border-radius: 15px;
+    height: 42px;
+    width: 417px;
+    margin: 29px;
+    margin-bottom: 9px;
+    font-size: 38px;
+	}
+	.btn{
+	border-radius: 26px;
+    font-size: 35px;
+    background-image: linear-gradient(#3DCCFF,#B78FFF);
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 0px darkblue;
+    cursor: pointer;
+	}
+	.hnav{
+		height: 63px;
+		transition-timing-function: ease-out;
+		transition-duration: 1s;
+	}
+	.v_class{
+		opacity: 0; 
+	}
+	.logo{
+		margin-right: 712px;
+	}
+}
 
 	</style>
 	<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=ff50155d283c5' async='true'></script>
 </head>
 <body>
 <center>
-	<nav class="nav_bar background">
+	<nav class="nav_bar background hnav">
 		<div class="logo"><img src="e-learning.svg" draggable="false"></div>
-		<p><a href="#home">Home</a></p>
-		<p><a href="#About">About</a></p>
-		<p><a href="#Contact">Contact</a></p>
-		<div class="right_nav">
+		<p><a href="#Home"  class="jome v_class ">Home</a></p>
+		<p><a href="#About" class="jom v_class ">About</a></p>
+		<p><a href="#Contact" class="jo v_class ">Contact</a></p>
+		<div class="right_nav v_class">
 			<input type="text" list="sh" name="search" id="search" placeholder="search">
 			<datalist id="sh">
 				<option value="Sequential Logic Circuit Pdf">
@@ -146,6 +205,11 @@
 			</datalist>
 			<button class="btn" id="clicker">Search</button>
 		</div>
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
 	</nav>
 	<section class="first">
 		<h1>E-educationline Teaching Platform
@@ -178,7 +242,21 @@
 	};
 	donate.addEventListener("click",OnHover);
 </script>
-<script id="contact">(function(){var pp=document.createElement('script'), ppr=document.getElementsByTagName('script')[0]; stid='OEtSZnJheWJXWC9Fd3J1VzJ2V3c3Zz09';pp.type='text/javascript'; pp.async=true; pp.src=('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr);})();</script>
+<script>
+	var height = document.querySelector('.hnav');
+	var burger = document.querySelector('.burger');
+	var navBar = document.querySelector('.jome');
+	var a = document.querySelector('.jom');
+	var b = document.querySelector('.jo');
+	var rightNav = document.querySelector('.right_nav');
+	var onButtonClick = function(){
+		height.style.height = "480px";
+		rightNav.classList.toggle('v_class');
+		navBar.classList.toggle('v_class');
+		a.classList.toggle('v_class');
+		b.classList.toggle('v_class');
+	};
+	burger.addEventListener("click",onButtonClick);
+</script>
 </body>
 </html>
-
