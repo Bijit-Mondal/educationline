@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="msvalidate.01" content="2F2243E06BC0FA6280B7F1452CA26386" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="favicon.svg" id="icon" type="image/x-icon">
 	<title>E-education Online Teaching Platform</title>
 	<style>
@@ -62,7 +63,7 @@
 	margin-bottom:17px;
 }
 .sec{
-	background:rgba(0,0,0,0.6)url("https://img.talkandroid.com/uploads/2013/11/stack_of_books.jpg");
+	background:rgba(0,0,0,0.6)url("file:///home/bivas/Pictures/Wallpapers/LOGO%20(copy).gif");
 	min-width: 510px;
 	max-width: 1400px;
 	padding:1px;
@@ -150,11 +151,36 @@
 	margin: 5px 3px;
 }
 		h1::selection{
-			background-color:#FF325E;
+			color:#FF325E;
+			display:none;
 		}
 		p::selection{
-			background-color:#FF325E;
-		}	
+			color:#FF325E;
+			display:none;
+		}
+		#donate::selection{
+				display:none;
+				color:#37F27A;
+			}	
+		#sub::selection{
+				display:none;
+				color:black;
+			}
+		#search::selection{
+				display:none;
+				color:#AF37F2;
+			}
+		.btn::selection{
+				display:none;
+				color:#72FFAF;
+			}
+		img::selection{
+			display:none;
+		}
+		.v_class::selection{
+			color:#A66CFF;
+			display:none;
+		}
 @media screen and (max-width: 1000px){
 	.nav_bar{
 		flex-direction: column;
@@ -208,11 +234,13 @@
 </head>
 <body id="body">
 <center>
+	<script async src="https://cse.google.com/cse.js?cx=a2d61ea5da92a7b2d"></script>
 	<nav class="nav_bar background hnav">
 		<div class="logo"><img src="e-learning.svg" draggable="false"></div>
 		<p><a href="#Home"  class="jome v_class ">Home</a></p>
 		<p><a href="#About" class="jom v_class ">About</a></p>
 		<p><a href="mailto:learnopedia@zohomail.in" class="jo v_class ">Contact</a></p>
+		<div class="gcse-search"></div>
 		<div class="right_nav v_class">
 			<input type="text" list="sh" name="search" id="search" placeholder="search">
 			<datalist id="sh">
@@ -244,7 +272,8 @@
 		<a href="" ><img src="images(2).jpeg" class="explore" height="140" width="120" draggable="false"></a>
 		</section>
 <div class="sec">
-	<section class="second">
+	<section class="second" id="About">
+		
 	</section>
 	<section class="third">
 		
