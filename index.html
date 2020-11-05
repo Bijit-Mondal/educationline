@@ -61,11 +61,20 @@
 	margin-bottom:17px;
 }
 .sec{
-	background:rgba(0,0,0,0.6)url("file:///home/bivas/Pictures/Wallpapers/LOGO%20(copy).gif");
+	background-color:black;
 	min-width: 510px;
 	max-width: 1400px;
 	padding:1px;
 	box-shadow: 0px 1px 20px black, 1px 0px 20px #C4FFF0,2px 0px 20px darkblue;
+	display: none;
+}
+.third{
+	background:rgba(0,0,0,0.6)url("https://source.unsplash.com/1000x700/?black,blue");
+	min-width: 510px;
+	max-width: 1400px;
+	padding:1px;
+	box-shadow: 0px 1px 20px black, 1px 0px 20px #C4FFF0,2px 0px 20px darkblue;
+	display: block;
 }
 .first{
 	background:rgba(0,0,0,0.6)url("https://source.unsplash.com/1000x700/?books,college,coding,hacker");
@@ -91,6 +100,21 @@
 	max-width: 1400px;
 	font-size:28px;
 }
+.all{
+	text-align: left;
+	min-width:510px;
+	max-width: 1400px;
+	font-size:20px;
+	font-family: Georgia, Times, 'Times New Roman',  serif;
+    font-weight: 550;
+	color:plum;
+	text-shadow: 0px 0px 25px cyan, 0px 0px 20px #FF797E, 1px 2px 10px black, 0px 2px 10px #FF1261;
+}
+.all::selection{
+	color:black;
+	display: none;
+}
+
 #line{
 	background-color:darkblue;
 	height:1px;
@@ -137,15 +161,15 @@
 	display: none;
 }
 .line{
-	width: 33px;
+	width: 74px;
+	height: 9px;
 	background-image: linear-gradient(#10003F,#288C3F,#8C282F);
-	height: 4px;
 	margin: 5px 3px;
 }
 .li{
-	width: 33px;
+	width: 74px;
+	height: 9px;
 	background-image: linear-gradient(#10003F,#288C3F,#8C282F);
-	height: 4px;
 	margin: 5px 3px;
 }
 		h1::selection{
@@ -179,7 +203,33 @@
 			color:#A66CFF;
 			display:none;
 		}
-@media screen and (max-width: 1000px){
+		.thumbnail {
+    		width: 514px;
+   			height: 291px;
+		}
+@media screen and (max-width:1000px){
+	.thumbnail{
+		width: 976px;
+    	height: 489px;
+	}
+	.all{
+		font-size: 10px;
+	}
+	.upload{
+		width: 191px;
+    	height: 200px;
+   	    margin-right: 525px;
+    	margin-top: 30px;
+   	    border-radius: 102px;
+	}
+	.explore{
+	  width: 191px;
+  	  height: 200px;
+  	  margin-right: 5px;
+  	  margin-top: 26px;
+  	  border-radius: 105px;
+	}
+	
 	.nav_bar{
 		flex-direction: column;
 	}
@@ -214,7 +264,7 @@
     cursor: pointer;
 	}
 	.hnav{
-		height: 63px;
+		height: 108px;
 		transition-timing-function: ease-out;
 		transition-duration: 1s;
 	}
@@ -224,8 +274,10 @@
 	.logo{
 		margin-right: 712px;
 	}
+	.logo img{
+		width: 100px;
+	}
 }
-
 	</style>
 	<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=ff50155d283c5' async='true'></script>
 	<script>(function(){var pp=document.createElement('script'), ppr=document.getElementsByTagName('script')[0]; stid='OEtSZnJheWJXWC9Fd3J1VzJ2V3c3Zz09';pp.type='text/javascript'; pp.async=true; pp.src=('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr);})();</script>
@@ -247,7 +299,7 @@
 				<option value="Data Structure Pdf">
 				<option value="Data Structure Audio">
 				<option value="Rudiments Of Computer Science Class 12">
-			</datalist>
+		</datalist>
 			<button class="btn" id="clicker">Search</button>
 		</div>
 			<div class="burger">
@@ -256,6 +308,8 @@
 				<div class="line"></div>
 			</div>
 			<div class = "bur">
+			<div class="li"></div>
+			<div class="li"></div>
 			<div class="li"></div></div>
 	</nav>
 	<section class="first">
@@ -265,16 +319,22 @@
 				And Student For Teaching And Learning Respectively. If You Love This You Can <a id="donate" href="" target="_blank">Donate Us.</a>
 				</p>
 		<a href="https://app.popt.in/APIRequest/click/f86b21f9f5544"><img src="images.jpeg" height="140" width="120" draggable="false" class="upload" ></a>
-		<a href="" ><img src="images(2).jpeg" class="explore" height="140" width="120" draggable="false"></a>
+		<a href="#Explore" class="hiding"><img src="images(2).jpeg" class="explore"  height="140" width="120" draggable="false"></a>
 		</section>
 <div class="sec">
-	<section class="second" id="About">
-		
+	<section class="second" id="Explore">
+		<a href=""><img src="./download.png" class="thumbnail" draggable="false"><div id="para"><p>
+			The Tag Of The Video  
+		</p></div>
+		</a>
+	</section>	
+</div>
+<div class="third">
+	<section  id="About">
+		<p class="all">We actually I am a student just learn coding and thought to make a website for providing everyone Free
+			class. You can donate to me as I am facing server problem. Your Content Will Never Be Deleted, and your privacy is safe with us.
+		</p>		
 	</section>
-	<section class="third">
-		
-	</section>
-	
 </div>
 </center>
 <script>
@@ -298,6 +358,12 @@
 	var b = document.querySelector('.jo');
 	var rightNav = document.querySelector('.right_nav');
 	var line = document.querySelector('.bur');
+	var explore = document.querySelector('.sec');
+	var hiding = document.querySelector('.hiding');
+	var onExploreClick = function(){
+		explore.style.display = "block";
+	} 
+	hiding.addEventListener("click",onExploreClick);
 	var onButtonClick = function(){
 		height.style.height = "480px";
 		rightNav.classList.toggle('v_class');
@@ -315,7 +381,7 @@
 		b.classList.toggle('v_class');
 		burger.style.display = "block";
 		line.style.display = "none";
-		height.style.height = "63px";
+		height.style.height = "108px";
 	};
 	line.addEventListener("click",onClick);
 </script>
