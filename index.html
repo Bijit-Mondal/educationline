@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- Made By Bijit-Mondal-->
-	<!--Render-->
+<!DOCTYPE html>                                                                          
+<html>                                                                                       
+<head>                                                                              
 	<meta charset="utf-8">
 	<link rel="icon" href="favicon.svg" id="icon" type="image/x-icon">
 	<title>E-education Online Teaching Platform</title>
@@ -12,6 +10,20 @@
 		padding: 0;
 		background-color: #D8ABFF;
 	}
+	.button--grey {
+		text-decoration:none;
+		font-style:italic;
+		font-weight:bold;
+		background-image:linear-gradient(#1AE8D5,#7825DE);
+		color:white;
+		border-radius:20px;
+		padding:5px;
+	}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #9737DD;
+}
 .logo img{
 	width:50px;
 	border:3;
@@ -64,7 +76,6 @@
 }
 .sec{
 	background-color:black;
-	background-size:cover;
 	min-width: 510px;
 	max-width: 1400px;
 	padding:1px;
@@ -73,7 +84,6 @@
 }
 .third{
 	background:rgba(0,0,0,0.6)url("https://source.unsplash.com/1000x700/?black,blue");
-	background-size:cover;
 	min-width: 510px;
 	max-width: 1400px;
 	padding:1px;
@@ -127,11 +137,6 @@
 	text-align: left;
 	min-width:510px;
 	max-width: 1400px;
-}
-.second p{
-	color:#D7B8FF;
-	font-weight: bold;
-	text-shadow: 0px 2px 8px #54FF63, 1px 2px 40px #FF2966, 2px 1.5px 2px black;
 }
 .upload{
     margin-right: 697px;
@@ -208,10 +213,41 @@
 			display:none;
 		}
 		.thumbnail {
-		width: 1399px;
+			width: 1399px;
    		    height: 636px;
 		}
+		#para{
+			color: white;
+			text-align: left;
+			font-size: 20px;
+			padding-right: 10px;
+		}
+		#para::selection{
+			display: none;
+			color: crimson;
+		}
+		.somee{
+			text-decoration: none;
+			font-weight: 200;
+			font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
+		.somee:active{
+			background-color: grey;
+		}
+		.somee:focus{
+			background-color: gray;
+		}
+		.l_tag{
+			width:300px;
+			height: 6px;
+		}
 @media screen and (max-width:1000px){
+	#para{
+			color: white;
+			text-align: left;
+			font-size: 40px;
+			padding-right: 10px;
+		}
 	.thumbnail{
 		width: 976px;
     	height: 489px;
@@ -281,6 +317,10 @@
 	.logo img{
 		width: 100px;
 	}
+	.sec{
+		transition-duration: 2s;
+		transition-timing-function: ease-out;
+	}
 }
 	</style>
 	<script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=ff50155d283c5' async='true'></script>
@@ -296,6 +336,7 @@
 		<div class="right_nav v_class">
 			<input type="text" list="sh" name="search" id="search" placeholder="search">
 			<datalist id="sh">
+				<option value="https://obreptitious-radius.000webhostapp.com">Hey You</option>
 				<option value="Sequential Logic Circuit Pdf">
 				<option value="Sequential Logic Circuit Audio">
 				<option value="Introduction To DBMS Pdf">
@@ -304,7 +345,7 @@
 				<option value="Data Structure Audio">
 				<option value="Rudiments Of Computer Science Class 12">
 		</datalist>
-			<button class="btn" id="clicker">Search</button>
+			<button class="btn" id="clicker" onclick="myFunction()">Search</button>
 		</div>
 			<div class="burger">
 				<div class="line"></div>
@@ -327,14 +368,21 @@
 		</section>
 <div class="sec">
 	<section class="second" id="Explore">
-		<a href="http://e-educationline.ezyro.com/Va/video.html?i=1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKgUEO_PX474tovEm3iN_3koGYokg2_dg-2Q&usqp=CAU" class="thumbnail" draggable="false"><div id="para"><p>
-			Be Fearless || Sandeep Maheshwari
-		</p></div>
-		</a>
-		<a href="http://coms2019.eu5.net/You%20Are%20An%20Original%20_%20Gaur%20Gopal%20Das.html"><img src="https://beautyofsoul.com/blog/wp-content/uploads/2018/12/I-made-reservations-at-8-oclock-in-the-evening-Circula-Restaurante-Mill-Road-West-Hempstead..png" class="thumbnail" draggable="false"><div id="para"><p>
-			You Are An Original || Gaur Gopal Das
-			</p></div>
-		</a>
+	<a class="somee" href="http://e-educationline.ezyro.com/Va/video.html">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKgUEO_PX474tovEm3iN_3koGYokg2_dg-2Q&usqp=CAU" class="thumbnail" draggable="false">
+			<table>
+				<td><p id="para">Be Fearless || Sandeep Maheshwari &nbsp;&nbsp;&nbsp;</p>
+			</a></td>
+			<td><a class="somee button--grey" target="blank" id="para" href="http://e-educationline.ezyro.com/uploads/2.ogv" download>Download</a></td></table>
+			<marquee width="100%" height="100%"><hr class="l_tag" color="blue"></marquee>
+	
+	<a class="somee" href="http://coms2019.eu5.net/You%20Are%20An%20Original%20_%20Gaur%20Gopal%20Das.html">
+		<img src="https://beautyofsoul.com/blog/wp-content/uploads/2018/12/I-made-reservations-at-8-oclock-in-the-evening-Circula-Restaurante-Mill-Road-West-Hempstead..png" class="thumbnail" draggable="false">
+		<table>
+		<td><p id="para">You Are An Original || Gaur Gopal Das &nbsp;&nbsp;&nbsp;</p>
+	</a></td>
+	<td><a class="somee button--grey"  target="blank" id="para" href="https://bijit-mondal.github.io/educationline/You%20Are%20An%20Original%20_%20Gaur%20Gopal%20Das.mp4" download>Download</a></td></table>
+	<marquee width="100%" height="100%"><hr class="l_tag" color="blue"></marquee>
 	</section>	
 </div>
 <div class="third">
@@ -346,9 +394,22 @@
 </div>
 </center>
 <script>
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("search");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+ /* Alert the copied text */
+  alert("Copied the url: " + copyText.value);
+}
 	var clickerButton=document.getElementById("clicker");
 	var onButtonClick = function(){
-		clickerButton.textContent="Oops! I Am Not Enable Now But I Will Be Soon";
+		clickerButton.textContent="Now Open A New Tabe And Paste The URL";
 	};
 	clickerButton.addEventListener("click",onButtonClick);
 	var donate = document.getElementById("donate");
@@ -389,9 +450,10 @@
 		b.classList.toggle('v_class');
 		burger.style.display = "block";
 		line.style.display = "none";
-		height.style.height = "108px";
+		height.style.height = "170px";
 	};
 	line.addEventListener("click",onClick);
 </script>
 </body>
 </html>
+
