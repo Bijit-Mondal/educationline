@@ -414,7 +414,7 @@ function myFunction() {
 		clickerButton.textContent="Now Open A New Tabe And Paste The URL";
 		var copyText = document.getElementById("search");
 		copyText = copyText.value;
-		res.redirect('copyText');
+		window.location.replace('copyText');
 	};
 	clickerButton.addEventListener("click",onButtonClick);
 	var donate = document.getElementById("donate");
