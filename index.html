@@ -336,14 +336,9 @@
 		<div class="right_nav v_class">
 			<input type="text" list="sh" name="search" id="search" placeholder="search">
 			<datalist id="sh">
-				<option value="https://obreptitious-radius.000webhostapp.com">Hey You</option>
-				<option value="Sequential Logic Circuit Pdf">
-				<option value="Sequential Logic Circuit Audio">
-				<option value="Introduction To DBMS Pdf">
-				<option value="Introduction To DBMS Audio">
-				<option value="Data Structure Pdf">
-				<option value="Data Structure Audio">
-				<option value="Rudiments Of Computer Science Class 12">
+				<option value="https://bijit-mondal.github.io/Videos/2.html">You Are An Original || Gaur Gopal Das</option>
+				<option value="https://bijit-mondal.github.io/Videos/1.html">If You Struggle To Make The Right Choice || Gaur Gopal Das</option>
+				<option value="https://bijit-mondal.github.io/Videos/4.html">Value Of Smile || Gaur Gopal Das</option>
 		</datalist>
 			<button class="btn" id="clicker" onclick="myFunction()">Search</button>
 		</div>
@@ -368,14 +363,7 @@
 		</section>
 <div class="sec">
 	<section class="second" id="Explore">
-	<a class="somee" href="https://bijit-mondal.github.io/Videos/3.html">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKgUEO_PX474tovEm3iN_3koGYokg2_dg-2Q&usqp=CAU" class="thumbnail" draggable="false">
-			<table>
-				<td><p id="para">Be Fearless || Sandeep Maheshwari &nbsp;&nbsp;&nbsp;</p>
-			</a></td>
-			<td><a class="somee button--grey" target="blank" id="para" href="http://e-educationline.ezyro.com/uploads/2.ogv" download>Download</a></td></table>
-			<marquee width="100%" height="100%"><hr class="l_tag" color="blue"></marquee>
-	
+
 	<a class="somee" href="https://bijit-mondal.github.io/Videos/2.html">
 		<img src="https://beautyofsoul.com/blog/wp-content/uploads/2018/12/I-made-reservations-at-8-oclock-in-the-evening-Circula-Restaurante-Mill-Road-West-Hempstead..png" class="thumbnail" draggable="false">
 		<table>
@@ -424,6 +412,9 @@ function myFunction() {
 	var clickerButton=document.getElementById("clicker");
 	var onButtonClick = function(){
 		clickerButton.textContent="Now Open A New Tabe And Paste The URL";
+		var copyText = document.getElementById("search");
+		copyText = copyText.value;
+		res.redirect('copyText');
 	};
 	clickerButton.addEventListener("click",onButtonClick);
 	var donate = document.getElementById("donate");
